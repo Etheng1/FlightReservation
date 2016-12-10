@@ -20,19 +20,6 @@ public class User {
 	int seqQuestion; // drop down list; five possible choices
 	String seqAnswer; // remember to ignore case
 
-	// int count = 0; // increment userID
-
-	/*
-	 * public User(String userName, String email, String password, String
-	 * userAnswer, String fName, String lName, String ssn, String address,
-	 * String zip, String state, int seqQuestion, String seqAnswer) {
-	 * this.userID = incrementUserID(); this.userName = userName; this.email =
-	 * email; this.password = password; this.userAnswer = userAnswer;
-	 * this.userType = whatUser(this.userAnswer); this.fName = fName; this.lName
-	 * = lName; this.ssn = ssn; this.address = address; this.zip = zip;
-	 * this.state = state; this.seqQuestion = seqQuestion; this.seqAnswer =
-	 * seqAnswer; }
-	 */
 	public User() {
 
 	}
@@ -153,24 +140,7 @@ public class User {
 		this.seqAnswer = seqAnswer;
 	}
 
-	/*
-	 * public void setCount(int count) { this.count = incrementUserID(); }
-	 *
-
-	public boolean whatUser(String input) {
-		if (input.equalsIgnoreCase(adminPassword)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public int incrementUserID() {
-		count++;
-		this.userID += count;
-		return this.userID;
-	}
-*/
+	
 	@Override
 	public String toString() {
 		return "User [userID=" + userID + ", userName=" + userName + ", email=" + email + ", password=" + password
